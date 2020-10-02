@@ -7,7 +7,7 @@ URL_HASH = "https://beatsaver.com/api/maps/by-hash/"
 BS_URL = "http://beatsaver.com"
 HEADERS = {"User-Agent": "Please/Dont/Block"}
 
-os.makedirs("BeatSong")
+os.makedirs("BeatSong", exist_ok=True)
 
 
 def download_song(song_url, filename):
